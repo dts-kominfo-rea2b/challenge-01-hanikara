@@ -3,9 +3,9 @@
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
 // Monica Colors
-const favColorMonica = ["Yellow", "Pink", "White", "Purple"];
+const favColorMonica = new Set(["Yellow", "Pink", "White", "Purple"]);
 // Monica Restaurant
-const favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
+const favRestaurantMonica = new Set(["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]);
 // Monica Education
 const eduMonica = [
   { name: "SD 01", city: "Jakarta", graduate: "2016" },
@@ -14,9 +14,9 @@ const eduMonica = [
 ];
 
 // Wendy Colors
-const favColorWendy = ["Blue", "Black", "Grey"];
+const favColorWendy = new Set(["Blue", "Black", "Grey"]);
 // Wendy Restaurant
-const favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
+const favRestaurantWendy = new Set(["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"]);
 // Wendy Education
 const eduWendy = [
   { name: "SD 02", city: "Jakarta", graduate: "2010" },
@@ -25,21 +25,18 @@ const eduWendy = [
   { name: "Universitas Maju", city: "Tangerang", graduate: "" },
 ];
 
-const firstUser = [
-  {
+const firstUser = {
     name: "Monica",
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: new Set(favColorMonica),
+    favoriteColor: () => console.log(colorsMonicaSet),
     isHavePet: true,
     education: eduMonica,
     favoriteRestaurant: new Set(favRestaurantMonica),
-  },
-];
+  };
 
-const secondUser = [
-  {
+const secondUser = {
     name: "Wendy",
     gender: "Male",
     age: 23,
@@ -47,14 +44,11 @@ const secondUser = [
     favoriteColor: colorsWendySet,
     isHavePet: false,
     education: eduWendy,
-    favoriteRestaurant: new Set(favRestaurantWendy),
-  },
-];
+    favoriteRestaurant: Array.from(favRestaurantWendy),
+  };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
-console.log(users);
-
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
