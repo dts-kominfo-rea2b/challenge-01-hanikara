@@ -25,11 +25,34 @@ const eduSmpWendy = [{ name: "SMP 03", city: "Bogor", graduate: "2013" }];
 const eduSmaWendy = [{ name: "SMA 01", city: "Surabaya", graduate: "2016" }];
 const eduUnivWendy = [{ name: "Universitas Maju", city: "Tangerang", graduate: "" }];
 
-const firstUser = {};
-const secondUser = {};
+const firstUser = [
+  {
+    name: "Monica",
+    gender: "Female",
+    age: 17,
+    email: "monica@dingdong.com",
+    favoriteColor: colorsMonicaSet,
+    isHavePet: true,
+    education: [eduSdMonica, eduSmpMonica, eduSmaMonica],
+    favoriteRestaurant: restaurantMonicaSet,
+  },
+];
+const secondUser = [
+  {
+    name: "Wendy",
+    gender: "Male",
+    age: 23,
+    email: "wendy@dingdong.com",
+    favoriteColor: colorsWendySet,
+    isHavePet: false,
+    education: [eduSdWendy, eduSmaWendy, eduSmaWendy, eduUnivWendy],
+    favoriteRestaurant: restaurantWendySet,
+  },
+];
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
-const users = [];
+const users = [firstUser, secondUser];
+console.log(users);
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
