@@ -3,26 +3,26 @@
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
 // Monica Colors
-const favColorMonica = new Set(["Yellow", "Pink", "White", "Purple"]);
+let favColorMonica = ["Yellow", "Pink", "White", "Purple"];
 // Monica Restaurant
-const favRestaurantMonica = new Set(["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]);
+let favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
 // Monica Education
 const eduMonica = [
   { name: "SD 01", city: "Jakarta", graduate: "2016" },
   { name: "SMP 02", city: "Jakarta", graduate: "2019" },
-  { name: "SMA 03", city: "Tangerang", graduate: "" },
+  { name: "SMA 03", city: "Tangerang", graduate: null },
 ];
 
 // Wendy Colors
-const favColorWendy = new Set(["Blue", "Black", "Grey"]);
+let favColorWendy = ["Blue", "Black", "Grey"];
 // Wendy Restaurant
-const favRestaurantWendy = new Set(["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"]);
+let favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
 // Wendy Education
 const eduWendy = [
   { name: "SD 02", city: "Jakarta", graduate: "2010" },
   { name: "SMP 03", city: "Bogor", graduate: "2013" },
   { name: "SMA 01", city: "Surabaya", graduate: "2016" },
-  { name: "Universitas Maju", city: "Tangerang", graduate: "" },
+  { name: "Universitas Maju", city: "Tangerang", graduate: null },
 ];
 
 const firstUser = {
@@ -30,7 +30,7 @@ const firstUser = {
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: () => console.log(colorsMonicaSet),
+    favoriteColor: new Set(favColorMonica),
     isHavePet: true,
     education: eduMonica,
     favoriteRestaurant: new Set(favRestaurantMonica),
@@ -41,10 +41,10 @@ const secondUser = {
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
-    favoriteColor: colorsWendySet,
+    favoriteColor: new Set(favColorWendy),
     isHavePet: false,
     education: eduWendy,
-    favoriteRestaurant: Array.from(favRestaurantWendy),
+    favoriteRestaurant: new Set(favRestaurantWendy),
   };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
