@@ -4,10 +4,10 @@
 
 // Monica Colors
 const favColorMonica = ["Yellow", "Pink", "White", "Purple"];
-const colorsMonicaSet = new Set(favColorMonica);
+let colorsMonicaSet = new Set(favColorMonica);
 // Monica Restaurant
 const favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
-const restaurantMonicaSet = new Set(favRestaurantMonica);
+let restaurantMonicaSet = new Set(favRestaurantMonica);
 // Monica Education
 const eduSdMonica = [{ name: "SD 01", city: "Jakarta", graduate: "2016" }];
 const eduSmpMonica = [{ name: "SMP 02", city: "Jakarta", graduate: "2019" }];
@@ -52,7 +52,6 @@ const secondUser = [
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
-console.log(users);
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
