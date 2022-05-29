@@ -3,10 +3,10 @@
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
 // Monica Colors
-const favColorMonica = ["Yellow", "Pink", "White", "Purple"];
+let favColorMonica = ["Yellow", "Pink", "White", "Purple"];
 let colorsMonicaSet = new Set(favColorMonica);
 // Monica Restaurant
-const favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
+let favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
 let restaurantMonicaSet = new Set(favRestaurantMonica);
 // Monica Education
 const eduSdMonica = [{ name: "SD 01", city: "Jakarta", graduate: "2016" }];
@@ -14,11 +14,11 @@ const eduSmpMonica = [{ name: "SMP 02", city: "Jakarta", graduate: "2019" }];
 const eduSmaMonica = [{ name: "SMA 03", city: "Tangerang", graduate: "" }];
 
 // Wendy Colors
-const favColorWendy = ["Blue", "Black", "Grey"];
-const colorsWendySet = new Set(favColorWendy);
+let favColorWendy = ["Blue", "Black", "Grey"];
+let colorsWendySet = new Set(favColorWendy);
 // Wendy Restaurant
-const favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
-const restaurantWendySet = new Set(favRestaurantWendy);
+let favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
+let restaurantWendySet = new Set(favRestaurantWendy);
 // Wendy Education
 const eduSdWendy = [{ name: "SD 02", city: "Jakarta", graduate: "2010" }];
 const eduSmpWendy = [{ name: "SMP 03", city: "Bogor", graduate: "2013" }];
