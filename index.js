@@ -1,6 +1,30 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
+
+// Monica Colors
+const favColorMonica = ["Yellow", "Pink", "White", "Purple"];
+const colorsMonicaSet = new Set(favColorMonica);
+// Monica Restaurant
+const favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
+const restaurantMonicaSet = new Set(favRestaurantMonica);
+// Monica Education
+const eduSdMonica = [{ name: "SD 01", city: "Jakarta", graduate: "2016" }];
+const eduSmpMonica = [{ name: "SMP 02", city: "Jakarta", graduate: "2019" }];
+const eduSmaMonica = [{ name: "SMA 03", city: "Tangerang", graduate: "" }];
+
+// Wendy Colors
+const favColorWendy = ["Blue", "Black", "Grey"];
+const colorsWendySet = new Set(favColorWendy);
+// Wendy Restaurant
+const favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
+const restaurantWendySet = new Set(favRestaurantWendy);
+// Wendy Education
+const eduSdWendy = [{ name: "SD 02", city: "Jakarta", graduate: "2010" }];
+const eduSmpWendy = [{ name: "SMP 03", city: "Bogor", graduate: "2013" }];
+const eduSmaWendy = [{ name: "SMA 01", city: "Surabaya", graduate: "2016" }];
+const eduUnivWendy = [{ name: "Universitas Maju", city: "Tangerang", graduate: "" }];
+
 const firstUser = {};
 const secondUser = {};
 
