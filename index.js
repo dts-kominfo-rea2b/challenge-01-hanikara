@@ -30,10 +30,10 @@ const firstUser = {
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: new Set(favColorMonica),
+    favoriteColor: [new Set(favColorMonica)],
     isHavePet: true,
     education: eduMonica,
-    favoriteRestaurant: new Set(favRestaurantMonica),
+    favoriteRestaurant: [new Set(favRestaurantMonica)],
   };
 
 const secondUser = {
@@ -41,10 +41,10 @@ const secondUser = {
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
-    favoriteColor: new Set(favColorWendy),
+    favoriteColor: [new Set(favColorWendy)],
     isHavePet: false,
     education: eduWendy,
-    favoriteRestaurant: new Set(favRestaurantWendy),
+    favoriteRestaurant: [new Set(favRestaurantWendy)],
   };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
