@@ -3,27 +3,27 @@
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
 // Monica Colors
-let favColorMonica = ["Yellow", "Pink", "White", "Purple"];
-let colorsMonicaSet = new Set(favColorMonica);
+const favColorMonica = ["Yellow", "Pink", "White", "Purple"];
 // Monica Restaurant
-let favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
-let restaurantMonicaSet = new Set(favRestaurantMonica);
+const favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
 // Monica Education
-const eduSdMonica = [{ name: "SD 01", city: "Jakarta", graduate: "2016" }];
-const eduSmpMonica = [{ name: "SMP 02", city: "Jakarta", graduate: "2019" }];
-const eduSmaMonica = [{ name: "SMA 03", city: "Tangerang", graduate: "" }];
+const eduMonica = [
+  { name: "SD 01", city: "Jakarta", graduate: "2016" },
+  { name: "SMP 02", city: "Jakarta", graduate: "2019" },
+  { name: "SMA 03", city: "Tangerang", graduate: "" },
+];
 
 // Wendy Colors
-let favColorWendy = ["Blue", "Black", "Grey"];
-let colorsWendySet = new Set(favColorWendy);
+const favColorWendy = ["Blue", "Black", "Grey"];
 // Wendy Restaurant
-let favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
-let restaurantWendySet = new Set(favRestaurantWendy);
+const favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
 // Wendy Education
-const eduSdWendy = [{ name: "SD 02", city: "Jakarta", graduate: "2010" }];
-const eduSmpWendy = [{ name: "SMP 03", city: "Bogor", graduate: "2013" }];
-const eduSmaWendy = [{ name: "SMA 01", city: "Surabaya", graduate: "2016" }];
-const eduUnivWendy = [{ name: "Universitas Maju", city: "Tangerang", graduate: "" }];
+const eduWendy = [
+  { name: "SD 02", city: "Jakarta", graduate: "2010" },
+  { name: "SMP 03", city: "Bogor", graduate: "2013" },
+  { name: "SMA 01", city: "Surabaya", graduate: "2016" },
+  { name: "Universitas Maju", city: "Tangerang", graduate: "" },
+];
 
 const firstUser = [
   {
@@ -31,12 +31,13 @@ const firstUser = [
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: colorsMonicaSet,
+    favoriteColor: new Set(favColorMonica),
     isHavePet: true,
-    education: [eduSdMonica, eduSmpMonica, eduSmaMonica],
-    favoriteRestaurant: restaurantMonicaSet,
+    education: eduMonica,
+    favoriteRestaurant: new Set(favRestaurantMonica),
   },
 ];
+
 const secondUser = [
   {
     name: "Wendy",
@@ -45,13 +46,15 @@ const secondUser = [
     email: "wendy@dingdong.com",
     favoriteColor: colorsWendySet,
     isHavePet: false,
-    education: [eduSdWendy, eduSmaWendy, eduSmaWendy, eduUnivWendy],
-    favoriteRestaurant: restaurantWendySet,
+    education: eduWendy,
+    favoriteRestaurant: new Set(favRestaurantWendy),
   },
 ];
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
+console.log(users);
+
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
